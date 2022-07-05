@@ -50,7 +50,7 @@ class Login extends Component {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Enter your Email"
+                placeholder="Enter your name"
                 onChange={ this.handleChange }
                 value={ name }
               />
@@ -58,7 +58,7 @@ class Login extends Component {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Enter your password"
+                placeholder="Enter your email"
                 onChange={ this.handleChange }
                 value={ email }
               />
@@ -69,13 +69,6 @@ class Login extends Component {
               onClick={ (event) => this.HandleClickButton(event) }
             >
               Play
-            </button>
-            <button
-              className="btn-config"
-              type="button"
-              onClick={ () => history.push('/config') }
-            >
-              Configurações
             </button>
           </form>
         </div>

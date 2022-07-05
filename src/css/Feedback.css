@@ -1,0 +1,38 @@
+.feedback_component {
+  color: white;
+  background-color: #8338EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  width: 100vw;
+  height: 80vh;
+  gap: 10vh;
+}
+
+.inform-section {
+  font-size: 20px;
+  height: 15vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-container {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-container > button {
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #FB5607;
+  border: 1px solid red;
+  height: 4vh;
+  width: 12vw;
+}

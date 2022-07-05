@@ -1,0 +1,17 @@
+.header_component { 
+  color: white;
+  background-color: #692dbd;
+  padding: 0 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 15vh;
+}
+
+.header_component > img {
+  width: 6.5vw;
+  height: 11vh;
+  border-radius: 50%;
+}
+

@@ -5,7 +5,7 @@ export class Config extends Component {
     return (
       <div>
         <section>
-          <h2 data-testid="settings-title">Configurações do Jogo</h2>
+          <h2>Configurações do Jogo</h2>
         </section>
       </div>
     );
