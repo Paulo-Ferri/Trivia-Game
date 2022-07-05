@@ -1,105 +1,56 @@
-.login-container {
-  background-color: #282c34;
+
+.login_page {
+  background-color: #8338ec;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.trivia-logo {
-  height: 20vh;
-  pointer-events: none;
-  user-select: none;
+.login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50vw;
+  height: 100vh;
 }
 
 .form-login {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  height: 30vh;
-  margin: 0 auto;
-  width: 30%;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }
 
-
-.form-login > label > input {
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  outline: none;
-  padding: 20px;
-  width: 20vw;
-}
-
-.form-login > label > input:nth-child( 1 ) {
-  margin-top: 20px;
-}
-
-.btn-play {
-  background-color: green;
-  border: none;
-  box-shadow: 1px 3px 10px #1717185e;
+.form-login > input {
+  outline: 1px solid black;
   color: white;
-  font-size: 1.5em;
-  height: 20%;
-  margin-bottom: 10%;
-  margin-top: 6%;
-  padding: 0.3em;
-  width: 10em;
+  background-color: #a874f2;
+  border: 1px solid #a874f2;
+  border-radius: 5px;
+  width: 29vw;
+  height: 3.5vh;
+  margin-bottom: 3vh;
+  padding-left: 1vw;
 }
 
-.btn-play:disabled {
-  background-color: rgba(0, 90, 0, 0.247);
-  color: rgba(255, 255, 255, 0.445);
-}
-
-.btn-play:hover {
-  background-color: rgb(0, 90, 0);
-  cursor: pointer;
-}
-
-
-.btn-config {
-  background-color: rgb(4, 35, 121);
-  border: none;
-  box-shadow: 1px 3px 10px #1717185e;
+.form-login > input::placeholder {
   color: white;
-  cursor: pointer;
-  font-size: 1em;
-  height: 20%;
-  padding: 0.3em;
-  width: 10em;
 }
 
-.btn-config:hover {
-  background-color: rgb(3, 19, 65);
-  cursor: pointer;
+.form-login > button {
+  outline: 1px solid black;
+  border-radius: 5px;
+  width: 15vw;
+  height: 3.5vh;
+  margin-bottom: 3vh;
+  border: 1px solid #FB5607;
+  background-color: #FB5607;
 }
 
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .trivia-logo {
-    animation: shake infinite 10s linear;
-  }
-}
-
-
-@keyframes shake {
-
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-40px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(40px, 0, 0);
-  }
+.login_container > img {
+  width: 30vw;
 }

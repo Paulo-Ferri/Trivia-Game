@@ -42,38 +42,29 @@ class Login extends Component {
     const { name, email, isDisabled } = this.state;
     const { history } = this.props;
     return (
-      <div>
-        <div className="login-container">
-          <header>
-            <img src={ logo } className="trivia-logo" alt="logo" />
-          </header>
+      <div className="login_page">
+        <div className="login_container">
+          <img src={ logo } className="trivia-logo" alt="logo" />
           <form className="form-login">
-            <label htmlFor="name">
               <input
                 type="text"
                 name="name"
                 id="name"
-                data-testid="input-player-name"
-                placeholder="Digite seu nome"
+                placeholder="Enter your Email"
                 onChange={ this.handleChange }
                 value={ name }
               />
-            </label>
-            <label htmlFor="email">
               <input
                 type="email"
                 name="email"
                 id="email"
-                data-testid="input-gravatar-email"
-                placeholder="Digite seu email"
+                placeholder="Enter your password"
                 onChange={ this.handleChange }
                 value={ email }
               />
-            </label>
             <button
               type="submit"
               className="btn-play"
-              data-testid="btn-play"
               disabled={ isDisabled }
               onClick={ (event) => this.HandleClickButton(event) }
             >
@@ -82,7 +73,6 @@ class Login extends Component {
             <button
               className="btn-config"
               type="button"
-              data-testid="btn-settings"
               onClick={ () => history.push('/config') }
             >
               Configurações
